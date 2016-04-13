@@ -1,0 +1,127 @@
+﻿cái sưả bị lỗi chi á :v
+trả lời fb đi tề
+:D
+đợi t xíu nghe :v
+nc tình cảm chi nói đi
+t ko đọc mô
+:D=
+=.=
+t nói với m thoi :v
+nè
+đầu tiên m phải lấy cid về mới biết mình sửa cái phần mô chớ?
+lúc đầu do m cho cái cid = 0
+nên hắn ko sửa đc
+rứa cái dòng in ra nớ có cần ko 
+ko cần
+vì t in ra để xem vì răng hắn ko lấy đc thôi
+còn lúc đầu cần có cái dòng ni nữa
+vì ở bên trang edit có dòng ni
+dòng nớ là lấy cái category mà mình vừa bấm vô
+mình ko đưa lên thì răng hắn biết mà lấy cái nớ về
+đau đầu :v
+ri nè
+đầu tiên mình có 1 cái cid để biết mình đang bấm vào cái category mô
+đồng ý ko?ok
+sau đó sang trang edit
+mình phải lấy cái cid về để từ đó lấy cái category có cái id giống cái cid đó
+đc chưa? được :v
+mình lấy đc cái cid đó rồi
+thì mình sẽ lấy đc 1 đối tượng id từ hàm ni mCat.getItemById(cid)uk
+mình lấy đc rồi thì mình sẽ đưa lên trang edit để nó hiển thị ra
+yes
+
+đưa lên dưới cái tên là objCat
+request.setAttribute("objCat", mCat.getItemById(cid));
+mình đưa lên rồi thì mình sẽ thông báo cho nó biết để nó lấy cái objCat đó bằng hàm ni
+Category objCat =(Category) request.getAttribute("objCat");
+rồi giờ mình có cái objCat đó ở trang jsp rồi
+nên mình chỉ cần cho nó hiển thị ra thôi
+"<%=objCat.getName()%>
+đc chưa? yes sir
+:D
+rồi
+đó là chưa baams submit
+khi minh bấm submit rồi
+thì nó sẽ đưa cái gái trị của ten về cái trang controller
+name="ten"
+nó sẽ đưa 1 cái parameter có tên là "ten" có giá trị là mình vừa sửa
+và 1 cái parameter có tên là "sua" và có giá trí trị là Sửa (value="Sửa")
+ok?um
+nó đưa qua đây
+thì mình sẽ lấy giá trị nó đưa qua
+trước tiên mình xét xem họ đã bấm sửa chưa
+nếu chưa bấm thì request.getParameter("sua") sẽ bằng null
+nên hắn chỉ làm công việc trong else thôi
+đó là đưa objCat lên
+còn nếu bấm rồi
+nó sẽ có giá trị của ten
+nên mình sẽ từ cái tên đó để sửa trong database
+ok?yesssss
+thì mình có tên rồi
+có cái id_cat của mình cần sửa nữa
+thì mình sẽ đưa nó vào 1 đối tượng cat để sửa thôi
+
+Category objCat = new Category(cid, ten);
+
+cái id là id_cat mình cần sửa
+còn ten là giá trị để mình sửa
+dc chưa?^^
+rồi
+nếu sửa đúng thì cái result sẽ bằng 1 chi
+thì nếu đúng mình sẽ đưa thông báo là sửa thành công bằng biến msg
+msg=1
+truyền parameter bằng link đó
+cái ni giống như khi mình gửi cái ten với submit lên servlet thôiok
+thì nhìn đường link nè
+nếu mà sửa thành công hắn sẽ chuyển qua trang indexcat
+mình sẽ vào trang indexcat để nhận cái msg vừa chuyển
+vì mình cho họ nhận chớ
+:)
+thì họ nhận đây nè
+nếu mà "1" bằng với lại cái msg mình lấy đc
+thì nó sẽ ỉn ra là thành công
+đc chưa?ok
+
+căn bản của cái  web ni là cho và nhận thôi
+cứ làm từ từ
+họ cho thì mình chạy tới nhận
+nên họ chưa cho mà mình nhận hắn sẽ báo null
+còn có khi họ cho mà mình ko thèm nhận nữa tề
+:D
+=.= cau sau ko hieu 
+thì ở câu ni
+response.sendRedirect(request.getContextPath() + "/admin/indexCat?msg=1");
+hắn sẽ gửi msg lên trang index chi?
+qua trang index nếu mình xóa cái ni đi là hắn ko thèm nhận đó
+:)
+:v
+làm tiếp đi
+nếu sai t sửa tiếp
+mà nếu đã nhận rồi thì phải xử lý cái dữ liệu nớ
+chớ nhận ko rứa thì làm chi
+:D
+xử lý như ri đây
+đó
+đc chưa?
+giong nhu cho banh thi phai an ko de han hu ak :bv
+uh
+giống như vậy
+nhaâận rôồig fthìfrg rpgrr =f.gf=.==hgg
+làm đi
+out đây
+đang nc với con Phương tềai 
+t
+:D=.=
+hawns có chuyện chi với con Hoài
+nên khuyên hắn thôi
+còn con Hoài nói sau
+đi ddaau xừ rồi
+=.= di an roi 
+biết hết hè
+:D
+làm đi
+out đây
+=.==.=ôm cái
+oi
+:D
+out đã
