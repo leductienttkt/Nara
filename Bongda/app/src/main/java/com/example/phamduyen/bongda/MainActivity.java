@@ -14,7 +14,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     EditText edName, edPass;
-    Button loginBtn;
+    Button loginBtn,registerBtn,guessBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         edName = (EditText)findViewById(R.id.userText);
         edPass = (EditText)findViewById(R.id.passText);
         loginBtn = (Button)findViewById(R.id.login_action);
+        guessBtn = (Button)findViewById(R.id.khach_action);
+        registerBtn = (Button)findViewById(R.id.register_action);
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,17 +33,24 @@ public class MainActivity extends AppCompatActivity {
                 String pass = edPass.getText().toString();
 
                 if("phuong".equals(name)&& "123".equals(pass)){
-                    Intent in = new Intent(MainActivity.this,ListMatchActivity.class);
+                    Intent in = new Intent(MainActivity.this,MainUser.class);
                     startActivity(in);
                 }
+            }
+        });
+         registerBtn.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent in = new Intent(MainActivity.this,RegisterActivity.class);
+                 startActivity(in);
+             }
+         });
+        guessBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
             }
         });
-
-
-
-
-
     }
 
   }

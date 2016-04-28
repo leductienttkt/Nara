@@ -3,40 +3,42 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     android:padding="20sp">
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="200px"
-        android:layout_height="200px"
+        android:layout_width="300px"
+        android:layout_height="300px"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/gau" />
+        android:src="@drawable/logo" />
 
     <android.support.design.widget.TextInputLayout
         android:hint="Email"
+        android:textColorHint="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/userText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/userText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:inputType="textPersonName" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:hint="Password"
+        android:textColorHint="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <EditText
-        android:id="@+id/passText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:ems="10"
-        android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/passText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:inputType="textPassword" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
@@ -48,10 +50,17 @@
         />
 
     <Button
-        android:id="@+id/cancel_action"
+        android:id="@+id/register_action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="REGISTER" />
+    <Button
+        android:id="@+id/khach_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="GUESS"
+        />
 
 </LinearLayout>
