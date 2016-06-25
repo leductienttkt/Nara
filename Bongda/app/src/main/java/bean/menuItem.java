@@ -5,10 +5,19 @@ package bean;
  */
 public class menuItem {
     private String funtion;
-    private String name;
-    public menuItem(String funtion, String name) {
+    private int idImage;
+
+    public int getIdImage() {
+        return idImage;
+    }
+
+    public void setIdImage(int idImage) {
+        this.idImage = idImage;
+    }
+
+    public menuItem(int idImage,String funtion) {
         this.funtion = funtion;
-        this.name = name;
+        this.idImage = idImage;
     }
 
     public String getFuntion() {
@@ -19,11 +28,4 @@ public class menuItem {
         this.funtion = funtion;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

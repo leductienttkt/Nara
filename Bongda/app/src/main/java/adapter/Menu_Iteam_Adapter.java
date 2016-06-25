@@ -37,7 +37,7 @@ public class Menu_Iteam_Adapter extends ArrayAdapter<menuItem>{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder = null;
-        if (convertView == null){
+        if (convertView != null){
             viewHolder=(ViewHolder)convertView.getTag();
         }
         else {
@@ -48,8 +48,9 @@ public class Menu_Iteam_Adapter extends ArrayAdapter<menuItem>{
             convertView.setTag(viewHolder);
         }
         menuItem item = menuItemArrayList.get(position);
-        int imageId = this.getMipmapResIdByName(item.getFuntion());
-        viewHolder.menuItem.setImageResource(imageId);
+       // int imageId = this.getMipmapResIdByName(item.getFuntion());
+        //viewHolder.menuItem.setImageResource(imageId);
+       viewHolder.menuItem.setImageResource(item.getIdImage());
         notifyDataSetChanged();
         return convertView;
     }

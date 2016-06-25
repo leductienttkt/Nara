@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 String name = edName.getText().toString();
                 String pass = edPass.getText().toString();
 
-                if("phuong".equals(name)&& "123".equals(pass)){
+                if("phuong".equals(name)){
                     Intent in = new Intent(MainActivity.this,MainUser.class);
                     startActivity(in);
                 }

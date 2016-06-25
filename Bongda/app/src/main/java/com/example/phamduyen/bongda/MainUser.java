@@ -19,12 +19,12 @@ public class MainUser extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_user);
-        gridView = (GridView) findViewById(R.id.menuViewUser);
+        gridView = (GridView)findViewById(R.id.menuViewUser);
 
         menuItemArrayList = new ArrayList<>();
-        menuItemArrayList.add(new menuItem("create_new","Thêm Sân"));
-        menuItemArrayList.add(new menuItem("ql_dangki","Quản Lý Đăng kí"));
-        menuItemArrayList.add(new menuItem("create_new","Cập nhật sân"));
+        menuItemArrayList.add(new menuItem(R.drawable.create_new,"Thêm Sân"));
+        menuItemArrayList.add(new menuItem(R.drawable.create_new,"Quản Lý Đăng kí"));
+        menuItemArrayList.add(new menuItem(R.drawable.create_new,"Cập nhật sân"));
 
         adapter = new Menu_Iteam_Adapter(this,R.layout.menu_main_user,menuItemArrayList);
         gridView.setAdapter(adapter);

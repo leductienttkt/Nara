@@ -16,7 +16,7 @@
         android:id="@+id/menuViewUser"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:columnWidth="150dp"
+        android:columnWidth="160dp"
         android:gravity="center"
         android:numColumns="auto_fit"
         android:drawSelectorOnTop="false" />
